@@ -26,4 +26,15 @@ update: (output, domEl) ->
   for device, i in devices when device.match patt
     do (device) ->
       [match, name, pct] = device.match patt
-      $(domEl).append render(name, parseInt(pct))
+      percent = parseInt(pct)
+      $(domEl).append render(name, percent)
+
+      state = 'good'
+
+      if (percent < 35)
+        state = 'warning'
+
+      if (percent < 15)
+        state = 'danger'
+
+      $(domEl).find('.progress-bar').attr "state", state

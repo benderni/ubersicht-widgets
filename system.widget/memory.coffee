@@ -19,6 +19,17 @@ update: (output, domEl) ->
   lines = output.split "\n"
 
   percentage = lines[27].split(': ')[1]
+  percent = parseInt(percentage)
 
   $(domEl).find('.percent').text percentage
-  $(domEl).find('.progress-bar').attr "value", parseInt(percentage)
+  $(domEl).find('.progress-bar').attr "value", percent
+
+  state = 'good'
+
+  if (percent < 35)
+    state = 'warning'
+
+  if (percent < 15)
+    state = 'danger'
+
+  $(domEl).find('.progress-bar').attr "state", state

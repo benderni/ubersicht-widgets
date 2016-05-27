@@ -20,3 +20,13 @@ update: (output, domEl) ->
 
   $(domEl).find('.percent').text percent + '%'
   $(domEl).find('.progress-bar').attr "value", percent
+
+  state = 'good'
+
+  if (percent < 35)
+    state = 'warning'
+
+  if (percent < 15)
+    state = 'danger'
+
+  $(domEl).find('.progress-bar').attr "state", state
