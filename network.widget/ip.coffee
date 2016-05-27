@@ -7,9 +7,7 @@ refreshFrequency: '60s'
 style: """
 .container
   font-size: 14px
-  color: rgb(250, 238, 223)
   padding: 2px 0 0 375px
-  text-shadow: 0 0 1px rgb(250, 238, 223)
 
   i
     padding: 0 6px 0 0
