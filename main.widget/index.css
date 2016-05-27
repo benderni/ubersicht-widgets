@@ -36,16 +36,13 @@ body, html {
 }
 
 .container progress[state='good']::-webkit-progress-value {
-    transition: width 1s ease-in-out;
     background: rgba(46, 204, 113,0.8);
 }
 
 .container progress[state='warning']::-webkit-progress-value {
-    transition: width 1s ease-in-out;
     background: rgba(243, 156, 18,0.8);
 }
 
 .container progress[state='danger']::-webkit-progress-value {
-    transition: width 1s ease-in-out;
     background: rgba(231, 76, 60,0.8);
 }
