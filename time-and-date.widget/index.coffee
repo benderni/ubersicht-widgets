@@ -14,7 +14,8 @@ left: 16px
 
 .container .time .hour,
 .container .date .day
-  color: rgba(250, 238, 223, .65)
+  color: #FFFFFF
+  opacity: 0.50;
 
 .container .date
   font-size: 32px

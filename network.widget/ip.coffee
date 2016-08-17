@@ -7,7 +7,7 @@ refreshFrequency: '60s'
 style: """
 .container
   font-size: 14px
-  padding: 2px 0 0 375px
+  padding: 2px 0 0 340px
 
   i
     padding: 0 6px 0 0

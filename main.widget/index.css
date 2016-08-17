@@ -1,6 +1,6 @@
 body, html {
     font-family: 'Verdana', Helvetica, Arial, sans-serif;
-    color: rgb(250, 238, 223);
+    color: #FFFFFF;
 }
 
 .container {
@@ -21,7 +21,6 @@ body, html {
     -webkit-appearance: none;
     appearance: none;
 
-    transform: skew(-20deg);
     width: 300px;
     height: 16px;
 }
@@ -32,17 +31,17 @@ body, html {
 
 .container progress::-webkit-progress-value {
     transition: width 1s ease-in-out;
-    background: rgba(189, 195, 199,0.8);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .container progress[state='good']::-webkit-progress-value {
-    background: rgba(46, 204, 113,0.8);
+    background: #4CAF50;
 }
 
 .container progress[state='warning']::-webkit-progress-value {
-    background: rgba(243, 156, 18,0.8);
+    background: #FF9800;
 }
 
 .container progress[state='danger']::-webkit-progress-value {
-    background: rgba(231, 76, 60,0.8);
+    background: #F44336;
 }
