@@ -1,4 +1,4 @@
-command: "pmset -g batt | awk 'FNR == 2 {print $2}' | sed -e 's/;//g'"
+command: "pmset -g batt | awk 'FNR == 2 {print $3}' | sed -e 's/;//g'"
 
 refreshFrequency: '5s'
 
